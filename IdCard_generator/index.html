@@ -9,8 +9,11 @@
     <script src="./javascript/index.js"></script>
 </head>
 <body>
-    <div class="section-container col-6">
-
+    <div class="section-container ">
+        <div class="text-center">
+            Input Form
+        </div>
+        <div>
         <form onsubmit="return false">
             <div class="form-element">
                 <label class="form-label">
@@ -35,21 +38,34 @@
             </div>
         </form>
     </div>
-    <div>
+    </div>
+    <div class="section-container">
         <div class="id-card-container" id="collegeCard">
-            <div>
-                <div>
+            <div class="text-center">
+                Generated Card
+            </div>
+            <div class="card-container">
+               <div class="card-wrapper">
+                <div class="user-card">
+                    <span class="user-photo">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </div>
+               </div>
+               <div class="general-information">
+                <div class="card-element card-name">
                     <span>Name</span>
                     <span id="cardName"></span>
                 </div>
-                <div>
+                <div class="card-element card-name">
                     <span>College Name</span>
                     <span id="collegeName"></span>
                 </div>
-                <div>
+                <div class="card-element card-name">
                     <span>Location</span>
                     <span id="locationName"></span>
                 </div>
+               </div>
             </div>
         </div>
     </div>

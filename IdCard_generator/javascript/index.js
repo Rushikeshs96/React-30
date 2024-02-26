@@ -17,7 +17,7 @@ function generateCard(){
     const locationValue=locationElement.value;
 
     const cardLocationElement=document.getElementById("locationName");
-    cardLocationElement.innerHTML=collegeValue;
+    cardLocationElement.innerHTML=locationValue;
 
 
 
