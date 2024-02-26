@@ -1,0 +1,28 @@
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.form-element{
+    margin: 10px;
+    min-width: 200px;
+    display: flex;
+}
+
+.form-label {
+    min-width: 170px;
+  }
+
+
+.text-center{
+    align-items: center;
+}
+
+
+
+.id-card-container {
+    display: none;
+  }
