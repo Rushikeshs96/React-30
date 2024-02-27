@@ -9,10 +9,15 @@
     <script>
         function submitForm(){
             const nameVariable=document.getElementById("name");
-            const name=nameVariable.value;
-           
+            console.log(nameVariable);
             const spanName=document.getElementById("spanName");
-            spanName.innerHTML=name;
+            spanName.innerHTML=nameVariable.value;
+
+
+            const ageVariable=document.getElementById("age");
+            const spanAge=document.getElementById("spanAge");
+            spanAge.innerHTML=ageVariable.value;
+
 
             document.getElementById("spanValue").style.display="block";
         }
@@ -33,7 +38,7 @@
                     </div>
                     <div style="margin:10px; min-width: 200px; display: flex;">
                         <label style="min-width: 80px;">Age</label>
-                        <input type="text" id="age">
+                        <input type="number" id="age">
                     </div>
                     <div style="display: flex;justify-content: center;">
                         <button type="submit" onclick="submitForm()">SUBMIT</button>
@@ -42,7 +47,7 @@
             </div>
         </div>
         <div id="spanValue" style="display: none;">
-            <div style="width: 60vw;height: 100%;display: flex;flex-direction: column; justify-content:center ;align-items: center;">
+            <div style="height: 100%;display: flex;flex-direction: column; justify-content:center ;align-items: center;">
             <div style="margin-bottom: 10px;">
                <span>Name</span>
                 <span id="spanName"></span>
