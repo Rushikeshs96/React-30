@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         let num=0;
+         let pluscount=0;
+         let minuscount=0;
+        let count=0;
+        function opertaion(){
+            document.getElementById("pluscount").innerHTML=pluscount;
+            document.getElementById("minuscount").innerHTML=minuscount;
+            document.getElementById("countdiv").style.display="block";
+        }
+
+        function increment(){
+            count++;
+            pluscount++;
+            num++;
+            document.getElementById("num").textContent=num;
+            opertaion();
+        }
+
+        function decrement(){
+            count++;
+            minuscount++;
+            num--;
+            document.getElementById("num").innerText=num;
+            opertaion();
+        }
+
+        function totalcount(){
+            document.getElementById("totalcount").innerHTML=count;
+            document.getElementById("tcount").style.display="block";
+        }
+        
+        
+    </script>
+</head>
+
+<body>
+    <div>
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h1>CLICKER</h1>
+        </div>
+        <div style="display: flex;align-items: center; justify-content: center;">
+            <h1 id="num">0</h1>
+        </div>
+        <div style="display: flex; align-items: center;flex-wrap:wrap;justify-content: center; ">
+            <div><button id="plus" onclick="increment()">+</button></div>
+            <div><button id="count" onclick="totalcount()">TOTAL COUNT</button></div>
+            <div><button id="minus" onclick="decrement()">-</button></div>
+        </div>
+        <!-- <div>
+            <div style="display: flex; align-items: center;flex-wrap:wrap;justify-content: center;margin: 10px; ">
+                <button onclick="reset()">RESET</button>
+            </div>
+        </div> -->
+    </div>
+    <div id="countdiv" style="display:none;margin: 10px; ">
+        <div style="display: flex;flex-direction: column;align-items: center;justify-content: center; margin: 10px;">
+        <div>
+            <lable>pluscount : </lable>
+            <span id="pluscount" ></span>
+        </div>
+        <div>
+            <label>minuscount : </label>
+            <span id="minuscount"></span>
+        </div>
+        <div id="tcount" style="display: none;">
+            <label>totalcount : </label>
+            <span id="totalcount"></span>
+        </div>
+         </div>
+    </div>
+</body>
+
+</html>
