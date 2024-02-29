@@ -23,21 +23,24 @@
 
             var str = hh + " : " + mm + " : " + ss;
             document.getElementById("time").innerHTML = str;
-            flag=setTimeout(displayTime,1000);
+            flag = setTimeout(displayTime, 1000);
         }
 
-        function stopRefresh(){
+        function stopRefresh() {
             clearTimeout(flag);
         }
-        
+
+        function green() {
+            document.getElementById("stop").style.backgroundColor = "green";
+        }
     </script>
 </head>
 
 <body onload="displayTime()">
     <div
         style="display: flex;flex-direction: column;justify-content: center;align-items: center; margin-top: 45vb;font-size: xx-large;">
-        <span id="time" style="margin:20px"></span>
-        <button onclick="stopRefresh()">STOP</button>
+        <span id="time" style="margin:20px; color:cornflowerblue;"></span>
+        <button id="stop" onclick="stopRefresh();green()" style="color:black;background-color: red;">STOP</button>
     </div>
 </body>
 
