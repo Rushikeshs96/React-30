@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <div>
-        <span id="time">
+    <script>
+            function displayTime(){
+                var cdate=new Date();
+                var hh=cdate.getHours();
+                var mm=cdate.getMinutes();
+                var ss=cdate.getSeconds();
 
-        </span>
+                var str=hh+" : "+mm+" : "+ss;
+                document.getElementById("time").innerHTML=str;
+            }
+    </script>
+</head>
+<body onload="displayTime()">
+    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center; margin-top: 45vb;font-size: xx-large;">
+        <span id="time" style="margin:20px"></span>
+        <button>STOP</button>
     </div>
 </body>
 </html>
