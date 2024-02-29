@@ -7,8 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .stop {
+            transition: transform 0.3s;
+        }
+
         .stop:hover {
-           background-color: red !important;
+            background-color: red !important;
+            transform: scale(1.3);
+        }
+
+        #time{
+            transition: transform 0.3s;
+        }
+
+        #time:hover{
+            transform: scale(1.5);
         }
     </style>
     <script>
@@ -35,9 +48,6 @@
             clearTimeout(flag);
         }
 
-        // function green() {
-        //     document.getElementById("stop").style.backgroundColor = "green";
-        // }
     </script>
 </head>
 
@@ -45,7 +55,7 @@
     <div
         style="display: flex;flex-direction: column;justify-content: center;align-items: center; margin-top: 45vb;font-size: xx-large;">
         <span id="time" style="margin:20px; color:cornflowerblue;"></span>
-        <button class="stop" onclick="stopRefresh();" style="color:black;">STOP</button>
+        <button class="stop" onclick="stopRefresh();" style="color:black;border-radius: 50%;">STOP</button>
     </div>
 </body>
 
