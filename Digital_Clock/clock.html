@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-          button.stop:hover{
-            color:blue;
-          }
+        .stop:hover {
+           background-color: red !important;
+        }
     </style>
     <script>
         function displayTime() {
@@ -35,9 +35,9 @@
             clearTimeout(flag);
         }
 
-        function green() {
-            document.getElementById("stop").style.backgroundColor = "green";
-        }
+        // function green() {
+        //     document.getElementById("stop").style.backgroundColor = "green";
+        // }
     </script>
 </head>
 
@@ -45,7 +45,7 @@
     <div
         style="display: flex;flex-direction: column;justify-content: center;align-items: center; margin-top: 45vb;font-size: xx-large;">
         <span id="time" style="margin:20px; color:cornflowerblue;"></span>
-        <button id="stop" onclick="stopRefresh();green()" style="color:black;background-color: red;">STOP</button>
+        <button class="stop" onclick="stopRefresh();" style="color:black;">STOP</button>
     </div>
 </body>
 
