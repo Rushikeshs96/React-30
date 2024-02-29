@@ -23,7 +23,13 @@
 
             var str = hh + " : " + mm + " : " + ss;
             document.getElementById("time").innerHTML = str;
+            flag=setTimeout(displayTime,1000);
         }
+
+        function stopRefresh(){
+            clearTimeout(flag);
+        }
+        
     </script>
 </head>
 
@@ -31,7 +37,7 @@
     <div
         style="display: flex;flex-direction: column;justify-content: center;align-items: center; margin-top: 45vb;font-size: xx-large;">
         <span id="time" style="margin:20px"></span>
-        <button>STOP</button>
+        <button onclick="stopRefresh()">STOP</button>
     </div>
 </body>
 
