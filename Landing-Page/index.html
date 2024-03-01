@@ -8,38 +8,38 @@
     <title>Document</title>
 </head>
 <style>
-      #announce{
+    #announce {
         transition: transform 0.3s;
-      }
-      #announce:hover{
-        transform: scale(1.3);
-      }
+    }
 
+    #announce:hover {
+        transform: scale(1.3);
+    }
 </style>
 <script>
-    function closeAnnounce(){
-        document.getElementById("announce").style.display="none";
+    function closeAnnounce() {
+        document.getElementById("announce").style.display = "none";
     }
 </script>
 
 <body>
     <div>
-        <div id="announce" style="display: flex; justify-content: center;align-items: center;font-family:fantasy;">
+        <div id="announce" style="display: flex; justify-content: center;align-items: center;font-family:fantasy;background-color: grey;">
             <span style="margin-right: 10px;">Hurry Up 40% OFF</span>
             <button onclick="closeAnnounce()" id="closebtn">x</button>
         </div>
         <div id="navbar"
-        style="display: flex;justify-content: space-around;align-items: center; background-color:cornflowerblue;height: 35px;">
-        <div style="margin-right: 30px;margin-left: 0px;">
-            <h2>DineHub</h2>
+            style="display: flex;justify-content: space-around;align-items: center; background-color:firebrick;height: 50px;">
+            <div style="margin-right: 30px;margin-inline-start: 0px;">
+                <h2>DineHub</h2>
+            </div>
+            <a>HOME</a>
+            <a>LISTING</a>
+            <a>PRODUCTS</a>
+            <a>AWARDS</a>
+            <a>CAREER</a>
+            <a>LOGIN</a>
         </div>
-        <a>HOME</a>
-        <a>LISTING</a>
-        <a>PRODUCTS</a>
-        <a>AWARDS</a>
-        <a>CAREER</a>
-        <a>LOGIN</a>
-    </div>
 
     </div>
 </body>
