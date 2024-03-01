@@ -7,12 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+
+</style>
+<script>
+    function closeAnnounce(){
+        document.getElementById("announce").style.display="none";
+    }
+</script>
 
 <body>
     <div>
-        <div id-announce style="display: flex; justify-content: center;align-items: center; background-color: red;font-family:fantasy;">
-            <span style="margin-right: 15px;">Hurry Up 40% OFF</span>
-            <button>x</button>
+        <div id="announce" style="display: flex; justify-content: center;align-items: center;font-family:fantasy;">
+            <span style="margin-right: 10px;">Hurry Up 40% OFF</span>
+            <button onclick="closeAnnounce()" id="closebtn">x</button>
         </div>
         <div>
 
