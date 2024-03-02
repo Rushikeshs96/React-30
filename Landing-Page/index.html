@@ -30,6 +30,28 @@
         document.getElementById("announce").style.display = "none";
     }
 
+    const sliderImages = document.querySelectorAll('#slider-container img');
+        const intervalTime = 5000; // Interval time in milliseconds
+        let index = 0;
+
+        function changeImage() {
+            index++;
+
+            if (index === sliderImages.length) {
+                index = 0;
+            }
+
+            sliderImages.forEach(image => image.style.opacity = 0);
+
+            sliderImages[index].style.opacity = 1;
+        }
+
+        function startSlider() {
+            setInterval(changeImage, intervalTime);
+        }
+
+        startSlider();
+
 </script>
 
 <body>
@@ -48,11 +70,12 @@
             <a id="navitem">LISTING</a>
             <a id="navitem">PRODUCTS</a>
             <a id="navitem">AWARDS</a>
-            <a id="navitem">CAREER</a>
+            <a id="navitem">REVIEWS</a>
             <a id="navitem">LOGIN</a>
         </div>
         <div id="slider-container">
-            <div id="slider"></div>
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
         </div>
     </div>
 </body>
