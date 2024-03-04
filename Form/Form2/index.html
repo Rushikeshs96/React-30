@@ -6,50 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <div>
-            <h2>VISITORS INFORMATION</h2>
-        </div>
-        <div>
-            <label for="email">EMAIL ID</label>
-            <input type="text" name="email" id="email" />
-        </div>
-        <div>
-            <div>
-                <label for="email"> DO YOU USE WEB FOR:</label>
-                <label for="r">Research</label>
-                <input type="checkbox" />
-                <label for="buy">Purchase</label>
-                <input type="checkbox" />
+    <div class="container-fluid">
+        <form>
+            <div class="form-label">
+                <h2>VISITORS INFORMATION</h2>
             </div>
-        </div>
-        <div>
-            <div>
-                <label for="occupation"> OCCUPATION :</label>
-                <select name="occupation" id="occupation" size="1">
-                    <option value="student">Student</option>
-                    <option value="job">Job</option>
-                    <option value="teacher">Teacher</option>
-                    <option value="farmer">Farmer</option>
-                    <option value="buisness">Buisness</option>
-                    <option value="gov">Gov job</option>
-                </select>
+            <div class="mb-3">
+                <label for="email" class="form-label">EMAIL ID</label>
+                <input type="text" name="email" id="email" class="form-control"/>
             </div>
-        </div>
-        <div>
-            <label>WANTS US TO SEND YOU NOTIFICATION ?</label>
-            <label for="abs">Absolutely</label>
-            <input type="radio" name="not" />
-            <label for="not">No Way Mam</label>
-            <input type="radio" name="not">
-        </div>
-        <div>
-            <button type="submit">SUBMIT</button>
-            <button type="reset">RESET</button>
-        </div>
+            <div class="mb-3">
+                <div>
+                    <label for="email" class="form-label"> DO YOU USE WEB FOR:</label>
+                    <label for="r">Research</label>
+                    <input type="checkbox"/>
+                    <label for="buy">Purchase</label>
+                    <input type="checkbox" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <div>
+                    <label for="occupation" class="form-label"> OCCUPATION :</label>
+                    <select name="occupation" id="occupation" size="1" class="form-select">
+                        <option value="student">Student</option>
+                        <option value="job">Job</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="buisness">Buisness</option>
+                        <option value="gov">Gov job</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">WANTS US TO SEND YOU NOTIFICATION ?</label>
+                <label for="abs">YES</label>
+                <input type="radio" name="not" />
+                <label for="not">No</label>
+                <input type="radio" name="not">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-outline-primary">SUBMIT</button>
+                <button type="reset" class="btn btn-outline-secondary">RESET</button>
+            </div>
+        </form>
     </div>
 </body>
 
